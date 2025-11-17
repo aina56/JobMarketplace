@@ -204,7 +204,11 @@
                             <li><a href="#">My Collections</a></li>
                             <li><a href="#">Account Settings</a></li>
                             <li><a href="#">Go Pro</a></li>
-                            <li><a href="#">Sign Out</a></li>
+                            <li><form method="POST" action="{{ route('logout') }}">
+    @csrf
+    <button type="submit">Logout</button>
+</form>
+</li>
                         </ul>
                     </div>
                     <div class="mobile-social-icon mb-50">

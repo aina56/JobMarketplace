@@ -34,5 +34,14 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'orcid' => [
+        'client_id' => env('ORCID_CLIENT_ID'),
+        'client_secret' => env('ORCID_CLIENT_SECRET'),
+        'redirect' => env('ORCID_REDIRECT_URI'),
+        'authorize_url' => 'https://orcid.org/oauth/authorize',
+        'token_url' => 'https://orcid.org/oauth/token',
+        'api_url' => 'https://pub.orcid.org/v3.0/',
+    ],
+
 
 ];
